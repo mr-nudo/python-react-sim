@@ -19,7 +19,7 @@ function App() {
 
     return (
         <div>
-            <h1>Backend Data</h1>
+            <h1>Qost Data</h1>
             <p>{JSON.stringify(data)}</p>
         </div>
     );
