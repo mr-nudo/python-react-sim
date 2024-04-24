@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/api/data')
 def get_data():
-    data = {'key': 'value'}
+    data = {'user': 'Qost Admin'}
     return jsonify(data)
 
 if __name__ == '__main__':
