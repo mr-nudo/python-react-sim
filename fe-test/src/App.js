@@ -5,7 +5,10 @@ function App() {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        axios.get('/api/data')
+        axios.create({
+          baseURL: "http://localhost:5000",
+        })
+        .get('/api/data')
             .then(response => {
                 setData(response.data);
             })
